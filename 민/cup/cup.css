@@ -1,0 +1,99 @@
+:root {
+    --color-yellow:#FFF5A6;
+    --color-green:#C7DC8A;
+    --color-blue:#C3FCF1;
+    --color-pink:#FFB1BE;
+
+    --brand-size:25.6px;
+    --img-width:400px;
+    --img-height:450px;
+}
+button {
+    border: none;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color: var(--color-pink);
+}
+/*navigation*/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.navigation {
+    justify-content: space-between;
+    background-color: var(--color-yellow);
+}
+
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.brand a {
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-pink);
+    display: flex;
+    align-items: center;
+}
+.brand img{
+    width: var(--brand-size);
+    height: var(--brand-size);
+    border-radius: 5px;
+}
+.hyeon {
+    margin-right: 10px;
+}
+/*space*/
+.space {
+    text-align: center;
+}
+.space img{
+    height:120px;
+}
+/*imgwrapper*/
+.contents_wrapper {
+    display: flex;
+    position: relative;
+}
+.img_wrapper{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+}
+.contents_wrapper img {
+    width: var(--img-width);
+    height: var(--img-height);
+}
+.best_min {
+    position: absolute;
+    color: var(--color-pink);
+    width: 100%;
+    text-align: center;
+    top: 5px;
+    font-size: 40px;
+}
+.vs {
+    position: absolute;
+    color: var(--color-yellow);
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
