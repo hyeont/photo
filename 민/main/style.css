@@ -92,3 +92,10 @@ ul {
     box-shadow: none;
     color: black;
 }
+
+@media screen and (max-width: 768px) {
+    li,
+    .description {
+        font-size: 10px;
+    }
+}
