@@ -6,7 +6,9 @@
 
     --brand-size:25.6px;
     --img-width:400px;
+    --Mimg-width:230px;
     --img-height:450px;
+    --Mimg-height:400px;
 }
 button {
     border: none;
@@ -72,8 +74,14 @@ ul {
 }
 .img_wrapper{
     display: flex;
+    position: relative;
     width: 100%;
     justify-content:center;
+}
+.img_name{
+    position: absolute;
+    bottom: 5px;
+    color: var(--color-pink);
 }
 .contents_wrapper img {
     width: var(--img-width);
@@ -86,6 +94,7 @@ ul {
     text-align: center;
     top: 5px;
     font-size: 40px;
+    z-index: 1;
 }
 .vs {
     position: absolute;
@@ -96,4 +105,23 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .img_wrapper {
+        display: flex;
+        position: relative;
+    }
+    .img_wrapper img {
+        width: var(--Mimg-width);
+        height: var(--Mimg-height);
+    }
+    .img_name{
+        position: absolute;
+        bottom: 5px;
+        color: var(--color-pink);
+    }
+    .best_min {
+        font-size: 20px;
+    }
 }
